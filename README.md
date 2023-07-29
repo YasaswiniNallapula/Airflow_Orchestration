@@ -1,24 +1,21 @@
 # Airflow_Orchestration
 
 ## Task 1
-● Aiflow docker image is downloaded.
-● Setup volumes to local folder in docker compose:
-  volumes:
-    - ${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags
-    - ${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs
-    - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins
-● Changed it to::
-  volumes:
-    - User_pathXXXX/dags:/opt/airflow/dags
-    - User_pathXXXX/logs:/opt/airflow/logs
-    - User_pathXXXX/plugins:/opt/airflow/plugins
+● Aiflow docker image is downloaded.  
+● Setup volumes to local folder in docker compose:  
+  volumes:  
+    - ${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags  
+    - ${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs  
+    - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins  
+● Changed it to::  
+  volumes:  
+    - User_pathXXXX/dags:/opt/airflow/dags  
+    - User_pathXXXX/logs:/opt/airflow/logs  
+    - User_pathXXXX/plugins:/opt/airflow/plugins  
 
-● Then in windows command prompt by using below docker commands airflow container starts running
-docker-compose up airflow-init
-airflow_folder-airflow-init-1  | User "airflow" created with role "Admin"
-airflow_folder-airflow-init-1  | 2.5.1
-airflow_folder-airflow-init-1 exited with code 0
-docker-compose up -d
+● Then in windows command prompt by using below docker commands airflow container starts running  
+docker-compose up airflow-init   
+docker-compose up -d  
 
 
 
