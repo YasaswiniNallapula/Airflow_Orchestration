@@ -1,0 +1,12 @@
+# configs/sources.yaml
+
+sources:
+  - REGIONS
+  - LOCATIONS
+  - JOBS
+  - COUNTRIES
+  - DEPARTMENTS
+  - EMPLOYEES
+  
+  
+  
